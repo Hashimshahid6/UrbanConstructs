@@ -1,8 +1,11 @@
 import React from "react";
-import AboutImg from "../../assets/images/about-us.jpg";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-import ServiceImg from "../../assets/images/construction1.jpg";
+import ServiceImg1 from "../../assets/images/construction18.jpg";
+import ServiceImg2 from "../../assets/images/construction19.jpg";
+import ServiceImg3 from "../../assets/images/construction21.jpg";
+import ServiceImg4 from "../../assets/images/construction22.jpg";
+
 import ConstructionImg1 from "../../assets/images/construction2.jpg";
 import ConstructionImg2 from "../../assets/images/construction3.jpg";
 import ConstructionImg3 from "../../assets/images/construction4.jpg";
@@ -10,14 +13,13 @@ import ConstructionImg4 from "../../assets/images/construction5.jpg";
 import BlogImg1 from "../../assets/images/construction5.jpg";
 import BlogImg2 from "../../assets/images/construction6.jpg";
 import BlogImg3 from "../../assets/images/construction7.jpg";
-import BlogImg4 from "../../assets/images/construction8.jpg";
 import icon1 from "../../assets/images/icon-1.svg";
 import icon2 from "../../assets/images/icon-2.svg";
 import icon3 from "../../assets/images/icon-3.svg";
 import AvatarImg from "../../assets/images/author-2.jpg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import About from "../common/About";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -51,38 +53,13 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         {/* About Us Section */}
-        <section className="section-2 py-5">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
-                <img src={AboutImg} alt="about" className="img-fluid" />
-              </div>
-              <div className="col-lg-6 d-flex align-items-center py-4">
-                <div>
-                  <span>About Us</span>
-                  <h2>Who We Are</h2>
-                  <p>
-                    Urbanedge Construction is a leading construction company
-                    that has been providing high-quality construction services
-                    to clients across the globe. We have a team of highly
-                    skilled professionals who are dedicated to providing
-                    exceptional services to our clients. Our team has years of
-                    experience in the construction industry and is committed to
-                    delivering projects on time and within budget. We take pride
-                    in our work and strive to exceed our clients' expectations
-                    with every project we undertake.
-                  </p>
-                  <button className="btn btn-primary small">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <About />
 
         {/* Section 3 Our Servies */}
         <section className="section-3 py-5 bg-light">
-          <div className="container-fluid py-5">
+          <div className="container-fluid">
             <div className="section-header text-center">
               <span>OUR SERVICES</span>
               <h2>Our Construction Services</h2>
@@ -95,7 +72,11 @@ const Home = () => {
               <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="service" className="img-fluid" />
+                    <img
+                      src={ServiceImg1}
+                      alt="service"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="service-body">
                     <div className="service-title">
@@ -114,7 +95,11 @@ const Home = () => {
               <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="service" className="img-fluid" />
+                    <img
+                      src={ServiceImg2}
+                      alt="service"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="service-body">
                     <div className="service-title">
@@ -133,7 +118,11 @@ const Home = () => {
               <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="service" className="img-fluid" />
+                    <img
+                      src={ServiceImg3}
+                      alt="service"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="service-body">
                     <div className="service-title">
@@ -152,7 +141,11 @@ const Home = () => {
               <div className="col-md-3 col-lg-3">
                 <div className="item">
                   <div className="service-image">
-                    <img src={ServiceImg} alt="service" className="img-fluid" />
+                    <img
+                      src={ServiceImg4}
+                      alt="service"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="service-body">
                     <div className="service-title">
@@ -686,7 +679,7 @@ const Home = () => {
         {/* Blog Section */}
         <section className="section-6 py-5 bg-light">
           <div className="container">
-          <div className="section-header text-center">
+            <div className="section-header text-center">
               <span>BLOG & NEWS</span>
               <h2>Articles & Blog Posts</h2>
               <p>
@@ -702,10 +695,17 @@ const Home = () => {
                   </div>
                   <div className="card-body p-4">
                     <div className="mb-2">
-                      <a href="" className="title mb-2">Our Top 5 Construction Projects</a>
-                      <p>Our top 5 construction projects that showcase our expertise and commitment to quality.</p>
+                      <a href="" className="title mb-2">
+                        Our Top 5 Construction Projects
+                      </a>
+                      <p>
+                        Our top 5 construction projects that showcase our
+                        expertise and commitment to quality.
+                      </p>
                     </div>
-                    <a href="" className="btn btn-primary small">Read More</a>
+                    <a href="" className="btn btn-primary small">
+                      Read More
+                    </a>
                   </div>
                 </div>
               </div>
@@ -716,10 +716,17 @@ const Home = () => {
                   </div>
                   <div className="card-body p-4">
                     <div className="mb-2">
-                      <a href="" className="title">Bahria Town Project</a>
-                      <p>Our top 5 construction projects that showcase our expertise and commitment to quality.</p>
+                      <a href="" className="title">
+                        Bahria Town Project
+                      </a>
+                      <p>
+                        Our top 5 construction projects that showcase our
+                        expertise and commitment to quality.
+                      </p>
                     </div>
-                    <a href="" className="btn btn-primary small">Read More</a>
+                    <a href="" className="btn btn-primary small">
+                      Read More
+                    </a>
                   </div>
                 </div>
               </div>
@@ -730,10 +737,17 @@ const Home = () => {
                   </div>
                   <div className="card-body p-4">
                     <div className="mb-2">
-                      <a href="" className="title">Our Top 5 Construction Projects</a>
-                      <p>Our top 5 construction projects that showcase our expertise and commitment to quality.</p>
+                      <a href="" className="title">
+                        Our Top 5 Construction Projects
+                      </a>
+                      <p>
+                        Our top 5 construction projects that showcase our
+                        expertise and commitment to quality.
+                      </p>
                     </div>
-                    <a href="" className="btn btn-primary small">Read More</a>
+                    <a href="" className="btn btn-primary small">
+                      Read More
+                    </a>
                   </div>
                 </div>
               </div>
